@@ -24,18 +24,35 @@ def test_add():
 
 
 # TODO: write test_subtract()
+def test_subtract():
+    assert subtract(5, 3) == 2
+    assert subtract(-3, -2) == -1
+    assert subtract(-4, 10) == -14
+    assert subtract(0, 0) == 0
+    assert subtract(2.5, 0.5) == 2.0
 
 
 # TODO: write test_multiply()
+def test_multiply():
+    assert multiply(5, 3) == 15
+    assert multiply(-3, -2) == 6
+    assert multiply(-4, 10) == -40
+    assert multiply(0, 0) == 0
+    assert multiply(2.5, 0.5) == 1.25
 
 
 # TODO: write test_divide()
+def test_divide():
+    assert divide(6, 3) == 2
+    assert divide(-9, -3) == 3
+    assert divide(10, -2) == -5;
+    assert divide(2.5, 0.5) == 5.0
 
 
 # TODO: write test_divide_by_zero()
 #   divide() raises a ValueError when b is 0. Here's how to test for an error:
-#       with pytest.raises(ValueError):
-#           divide(1, 0)
+    with pytest.raises(ValueError):
+          divide(1, 0)
 
 
 # BONUS: add any extra tests you want! 
